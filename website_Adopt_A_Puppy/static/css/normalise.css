@@ -1,0 +1,22 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+nav, footer{
+    background-color: #89CFF0;
+}
+body{
+    padding: 10px;
+    background-image: url("/images/pink-and-blue-paws.jpg");
+    font-family: 'Lato', sans-serif;
+    min-width: 320px;
+    /* font-family: 'Lobster Two', cursive; */
+}
+header{
+    width: 100%;
+}
+
