@@ -1,1 +1,1 @@
-web: gunicorn website_Adopt_A_Puppy
+web: gunicorn app:app
