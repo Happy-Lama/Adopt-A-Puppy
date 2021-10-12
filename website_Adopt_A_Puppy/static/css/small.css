@@ -43,13 +43,13 @@ main{
     height: 300px;
     margin: auto;
 }
-span{
+/* span{
     opacity: 0;
 }
 .appear{
     opacity: 1;
     transition-duration:3s ;
-}
+} */
 footer{
     width: 100%;
 }
