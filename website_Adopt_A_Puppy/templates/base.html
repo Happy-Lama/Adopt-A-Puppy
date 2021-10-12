@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster+Two&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/normalise.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/small.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/medium.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/large.css') }}">
+
+    <title>Home | Adopt-A-Puppy</title>
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static',filename='images/highlight_img.jpeg') }}" alt="Puppies Playing with a girl">
+    </header>
+    <nav class="row">
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('adopt_a_puppy') }}">Adopt-A-Puppy</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+    </nav>
+    {% block content %}
+    {% endblock %}
+    <footer class="row">
+        <p>
+            <h1>Contacts</h1>
+            <h3>    Plot 96, Ben Kiwanuka Road,</br>
+                Kampala, Uganda</br>
+                Tel: +2567597082564</h3>
+        </p>
+        <p>
+            <ul>
+                <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="{{ url_for('static',filename='images/instagram-logo-A807AD378B-seeklogo.com.png') }}" alt="Instagram"></a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="{{ url_for('static',filename='images/twitter.png') }}" alt="Twitter"></a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="{{ url_for('static',filename='images/facebook-circular-logo.png') }}" alt="Facebook"></a></li>
+            </ul>
+        </p>
+    </footer>
+    <script src="{{ url_for('static',filename='js/script.js') }}"></script>
+</body>
+</html>
