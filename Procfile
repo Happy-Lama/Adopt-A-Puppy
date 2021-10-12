@@ -1,1 +1,1 @@
-web: gunicorn wsgi:website_Adopt_A_Puppy
+web: gunicorn app:website_Adopt_A_Puppy
